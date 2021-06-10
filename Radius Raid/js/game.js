@@ -1,7 +1,6 @@
 /*==============================================================================
 Init
-==============================================================================*/
-document.documentElement.requestFullscreen();
+==============================================================*/
 $.init = function() {
 	$.leftJoystick = document.getElementById( 'left-joystick' );
 	$.rightJoystick = document.getElementById( 'right-joystick' );
