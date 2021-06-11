@@ -294,11 +294,12 @@ body .container .skills div {
   position: relative;
 }
 body .container .skills .language .skillbox {
-  opacity: 0.8;
+  color: #000000;
+  opacity: 1;
   margin: 5px;
 }
 body .container .skills .language .skillbox .percentage {
-  background-color: #d8d8d8;
+  background-color: #DDDDDD;
   border-radius: 5px;
 }
 body .container .skills .language .skillbox .percentage div {
@@ -615,7 +616,7 @@ body .container footer {
     font-size: 14px;
   }
 }
-@media all and (orientation: landscape) {
+@media all and (orientation: landscape) and (min-device-aspect-ratio: 1/1) {
   body .background {
     position: fixed;
     top: 50%;
