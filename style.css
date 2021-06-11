@@ -309,7 +309,6 @@ body .container .skills .language .skillbox .percentage{
   height: 5px;
 }
 body .container .skills .language .skillbox #c {
-  height: 5px;
   background-color: #4f89f5;
   width: 85%;
   color: white;
@@ -405,7 +404,7 @@ body .container .skills .language .skillbox #twod {
   color: white;
   padding-left: 5px;
 }
-.percentage > div{
+.percentage div{
   padding: 0px;
   height: 5px;
 }
