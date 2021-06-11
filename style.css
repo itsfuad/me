@@ -305,7 +305,11 @@ body .container .skills .language .skillbox .percentage div {
   border-radius: 5px;
   padding-left: 3px;
 }
+body .container .skills .language .skillbox .percentage{
+  height: 5px;
+}
 body .container .skills .language .skillbox #c {
+  height: 5px;
   background-color: #4f89f5;
   width: 85%;
   color: white;
@@ -324,7 +328,7 @@ body .container .skills .language .skillbox #cs {
   padding-left: 5px;
 }
 body .container .skills .language .skillbox #java {
-  background-color: #b45608;
+  background-color: #F56161;
   width: 75%;
   color: white;
   padding-left: 5px;
@@ -400,6 +404,10 @@ body .container .skills .language .skillbox #twod {
   width: 70%;
   color: white;
   padding-left: 5px;
+}
+.percentage > div{
+  padding: 0px;
+  height: 5px;
 }
 body .container .contact_me {
   position: relative;
