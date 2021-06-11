@@ -8,6 +8,28 @@
 			body {
 				background: #080808;
 			}
+      #load{
+	position: fixed;		
+	left: 50%;
+    top: 50%;				
+    padding: 100%;
+    background: white;
+    color:black;
+    font-size:20px;
+    opacity:1;
+    visibility: visible;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    z-index: 10;
+	  transition:600ms;
+}
+#load .preload-txt{
+    width: 100ch;
+}
+#load.done{
+	z-index:-10;
+	visibility: hidden;
+	opacity:0;
+}
 
 			#wrap {
 				background: #222;
@@ -54,7 +76,8 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body onload="load()">
+	  <div id="load"><img src="Rocket.gif"></div>
 		<div id="left-joystick" class="joystick"></div>
 		<div id="right-joystick" class="joystick"></div>
 		<div id="wrap">
@@ -67,7 +90,11 @@
 				<canvas id="cfg"></canvas>
 			</div>
 		</div>
-		<script>var $ = {};</script>
+		<script>var $ = {};
+		function load(){
+		  document.getElementById("load").classList.toggle("done");
+		}
+		</script>
 		<script src="js/touch-compat.js"></script>
 		<script src="js/jsfxr.js"></script>
 		<script src="js/util.js"></script>
