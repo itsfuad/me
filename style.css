@@ -133,6 +133,9 @@ body .background.fade {
           filter: blur(3px);
 }
 body .container {
+   user-select:none;
+  -moz-user-select:none;
+  -webkit-user-select:none;
   position: relative;
   font-size: 1.5rem;
   display: -webkit-box;
