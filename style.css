@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
 }
 body strong{
   color: #519DF9;
@@ -143,7 +143,7 @@ body .background.fade {
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
-body .container {
+body .container{
   user-select:none;
   -moz-user-select:none;
   -webkit-user-select:none;
@@ -163,13 +163,10 @@ body .container {
       align-content: center;
   -webkit-transition: 600ms;
   transition: 600ms;
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
-  overflow: scroll;
 }
 body .container section {
+  padding: 5px;
   padding-top: 50vh;
-  scroll-snap-align: start;
 }
 body .container #navmobile {
   cursor: pointer;
@@ -285,7 +282,13 @@ body .container .about {
   z-index: 4;
   padding-bottom: 10vh;
 }
-body .container .skills {
+body .container #about-detail{
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    text-align: justify;
+    border-radius: 10px;
+}
+body .container .skills{
   position: relative;
   padding-top: 20vh;
   margin: 2rem;
@@ -295,9 +298,16 @@ body .container .skills .container{
   text-align: justify;
   display: grid;
   grid-auto-flow: row;
+  justify-content: center;
   gap:5px;
 }
-body .container .skills div {
+body .container .skills .container-2 > div{
+  margin-bottom: 15px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+body .container .skills  div {
   position: relative;
 }
 body .container .skills .language .skillbox {
