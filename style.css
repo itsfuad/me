@@ -58,6 +58,7 @@ body .background {
           transform: translate(-50%, -50%);
 }
 body .background .clock {
+  
   width: 20rem;
   height: 20rem;
   display: -webkit-box;
@@ -78,6 +79,7 @@ body .background .clock {
 }
 body .background .clock .hour, body .background .clock .min, body .background .clock .sec {
   position: absolute;
+  transition: 600ms;
 }
 body .background .clock .hour, body .background .clock .hr {
   width: 9rem;
@@ -251,7 +253,6 @@ body .container .title-3 {
 body .container .home {
   opacity: 0;
   position: relative;
-  top: 70%;
   z-index: 4;
   margin: 2rem;
 }
@@ -289,6 +290,12 @@ body .container .skills {
   padding-top: 20vh;
   margin: 2rem;
   z-index: 4;
+}
+body .container .skills .container{
+  text-align: justify;
+  display: grid;
+  grid-auto-flow: row;
+  gap:5px;
 }
 body .container .skills div {
   position: relative;
@@ -696,6 +703,12 @@ body .container footer {
     padding: 0.5rem;
     margin: 0.5rem;
     border: none;
+  }
+  body .container .skills .container {
+    text-align: justify;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
   }
   body .container .contact_me form input[type=text], body .container .contact_me form input[type=email] {
     width: 50vw;
