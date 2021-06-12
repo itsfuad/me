@@ -714,7 +714,7 @@ body .container footer {
     margin: 0.5rem;
     border: none;
   }
-  body .container .skills .container {
+  body .container .skills .container-2{
     text-align: justify;
     display: grid;
     grid-auto-flow: column;
