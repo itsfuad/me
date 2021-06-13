@@ -328,99 +328,164 @@ body .container .skills .language .skillbox .percentage{
 }
 body .container .skills .language .skillbox #c {
   background-color: #4f89f5;
-  width: 85%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
 }
-body .container .skills .language .skillbox #cpp {
+body .container .skills .language .skillbox #c[data-scroll="in"]{
+  width:85%;
+}
+body .container .skills .language .skillbox #cplus {
   background-color: #3402a7;
-  width: 90%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
 }
+
+body .container .skills .language .skillbox #cplus[data-scroll="in"]{
+  width: 90%;
+}
+
 body .container .skills .language .skillbox #cs {
   background-color: #4e4eca;
-  width: 70%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #cs[data-scroll="in"]{
+  width:70%;
 }
 body .container .skills .language .skillbox #java {
   background-color: #F56161;
-  width: 75%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #java[data-scroll="in"] {
+  width: 75%;
 }
 body .container .skills .language .skillbox #py {
   background-color: #1463da;
-  width: 80%;
+  width: 0%;
   color: white;
-  padding-left: 5px;
+  padding-left: 5px;transition: 600ms;
+}
+body .container .skills .language .skillbox #py[data-scroll="in"] {
+  width: 80%;
 }
 body .container .skills .language .skillbox #kt {
   background-color: #123f92;
-  width: 60%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #kt[data-scroll="in"] {
+  width: 60%;
 }
 body .container .skills .language .skillbox #go {
   background-color: #4f9ffa;
-  width: 60%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #go[data-scroll="in"] {
+  width: 60%;
 }
 body .container .skills .language .skillbox #html {
   background-color: #ff8800;
-  width: 95%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #html[data-scroll="in"] {
+  width: 95%;
 }
 body .container .skills .language .skillbox #css {
   background-color: #8ac1ff;
-  width: 75%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #css[data-scroll="in"] {
+  width: 75%;
 }
 body .container .skills .language .skillbox #js {
   background-color: #f8fa76;
-  width: 60%;
+  width: 0%;
   color: black;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #js[data-scroll="in"] {
+  width: 60%;
 }
 body .container .skills .language .skillbox #php {
   background-color: #7699fa;
-  width: 50%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #php[data-scroll="in"] {
+  width: 50%;
 }
 body .container .skills .language .skillbox #sketch {
   background-color: black;
-  width: 80%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #sketch[data-scroll="in"] {
+  width: 80%;
 }
 body .container .skills .language .skillbox #digi {
   background-color: #ffc493;
-  width: 80%;
+  width: 0%;
   color: black;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #digi[data-scroll="in"] {
+  width: 85%;
 }
 body .container .skills .language .skillbox #logo {
   background-color: #ff3b3b;
-  width: 70%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #logo[data-scroll="in"] {
+  width: 90%;
 }
 body .container .skills .language .skillbox #threed {
   background-color: #fdff70;
-  width: 65%;
+  width: 0%;
   color: black;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #threed[data-scroll="in"] {
+  width: 65%;
 }
 body .container .skills .language .skillbox #twod {
   background-color: #7473ac;
-  width: 70%;
+  width: 0%;
   color: white;
   padding-left: 5px;
+  transition: 600ms;
+}
+body .container .skills .language .skillbox #twod[data-scroll="in"] {
+  width: 70%;
 }
 .percentage div {
   height: 5px;
