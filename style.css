@@ -166,7 +166,7 @@ body .container{
 }
 body .container section {
   padding: 5px;
-  padding-top: 50vh;
+  
 }
 body .container #navmobile {
   cursor: pointer;
@@ -252,7 +252,9 @@ body .container .home {
   position: relative;
   z-index: 4;
   margin: 2rem;
+  margin-top: 70vh;
 }
+
 body .container .home .name {
   -webkit-transition: 600ms;
   transition: 600ms;
@@ -280,7 +282,15 @@ body .container .about {
   position: relative;
   margin: 2rem;
   z-index: 4;
-  padding-bottom: 10vh;
+  margin-top: 20vh;
+  padding-top: 10vh;
+  left: -50vw;
+  opacity: 0;
+  transition: 600ms;
+}
+body .container .about[data-scroll="in"]{
+  left: 0;
+  opacity: 1;
 }
 body .container #about-detail{
     background: rgba(0, 0, 0, 0.05);
@@ -290,9 +300,14 @@ body .container #about-detail{
 }
 body .container .skills{
   position: relative;
-  padding-top: 20vh;
+  padding-top: 10vh;
   margin: 2rem;
   z-index: 4;
+  opacity: 0;
+  transition: 600ms;
+}
+body .container .skills[data-scroll="in"]{
+  opacity: 1;
 }
 body .container .skills .container{
   text-align: justify;
@@ -492,14 +507,20 @@ body .container .skills .language .skillbox #twod[data-scroll="in"] {
 }
 body .container .contact_me {
   position: relative;
-  padding-top: 20vh;
   margin: 0;
   margin: 0.5rem;
+  padding-top: 10vh;
   color: black;
   text-align: center;
   border-radius: 5px;
   background-color: transparent;
   z-index: 4;
+  opacity: 0;
+  transition: 600ms;
+}
+
+body .container .contact_me[data-scroll="in"]{
+  opacity: 1;
 }
 body .container .contact_me form input[type=text], body .container .contact_me form input[type=email] {
   background: none;
