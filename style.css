@@ -306,6 +306,7 @@ body .container .skills{
   opacity: 0;
   transition: 600ms;
 }
+
 body .container .skills[data-scroll="in"]{
   opacity: 1;
 }
@@ -800,12 +801,23 @@ body .container footer {
     margin: 0.5rem;
     border: none;
   }
+
+  .about img{
+    height: 30%;
+    width: 30%;
+  }
+
+  .skills img{
+    height: 30%;
+    width: 30%;
+  }
   body .container .skills .container-2{
     text-align: justify;
     display: grid;
     grid-auto-flow: column;
     gap: 25px;
   }
+  
   body .container .contact_me form input[type=text], body .container .contact_me form input[type=email] {
     width: 50vw;
   }
