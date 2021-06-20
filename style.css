@@ -3,11 +3,13 @@
   src: url("src/Now-Regular.otf");
 }
 * {
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
+  font-size: 9px;
   font-family: Now, "Courier New", Courier, monospace;
   scroll-behavior: smooth;
 }
