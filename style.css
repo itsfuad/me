@@ -12,10 +12,12 @@ html {
   font-size: 9px;
   font-family: Now, "Courier New", Courier, monospace;
   scroll-behavior: smooth;
-  background-color: rgb(27, 32, 41);
   color: white;
 }
 
+body{
+  background: #16181E;
+}
 
 body strong{
   color: #519DF9;
@@ -49,16 +51,13 @@ body #load.done{
 	opacity:0;
 	z-index: -10;
 }
-/*
-body .background {
-  position: fixed;
-  top: 40%;
-  left: 60%;
-  -webkit-transition: 600ms;
-  transition: 600ms;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+
+body #bg {
+ position: fixed;
+ top:50%;
+ transform: translateY(-50%);
 }
+/*
 body .background .clock {
   
   width: 20rem;
@@ -167,6 +166,7 @@ body .container{
   -webkit-transition: 600ms;
   transition: 600ms;
 }
+
 body .container section {
   padding: 5px;
   
@@ -506,7 +506,7 @@ body .container .contact_me form input[type=text], body .container .contact_me f
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 14px 10px;
   width: 88vw;
   outline: none;
@@ -525,7 +525,7 @@ body .container .contact_me form input[type=submit] {
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 14px 40px;
   outline: none;
   color: white;
@@ -535,17 +535,17 @@ body .container .contact_me form input[type=submit] {
   cursor: pointer;
 }
 body .container .contact_me form input[type=submit]:hover {
-  background: black;
-  color: white;
-  -webkit-box-shadow: 0 0 20px black;
-          box-shadow: 0 0 20px black;
+  background: white;
+  color: black;
+  -webkit-box-shadow: 0 0 20px white;
+          box-shadow: 0 0 20px white;
 }
 body .container .contact_me form textarea {
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 14px 10px;
   width: 88vw;
   outline: none;
@@ -572,18 +572,23 @@ body .container .contact_me .socials {
 }
 body .container ::-webkit-input-placeholder {
   font-family: Now;
+  color:white;
 }
 body .container ::-moz-placeholder {
   font-family: Now;
+  color: white;
 }
 body .container :-ms-input-placeholder {
   font-family: Now;
+  color:white;
 }
 body .container ::-ms-input-placeholder {
   font-family: Now;
+  color:white;
 }
 body .container ::placeholder {
   font-family: Now;
+  color:white;
 }
 body .container .game {
   display: -webkit-box;
@@ -607,7 +612,11 @@ body .container footer {
   background-color: black;
   padding: 5px;
 }
-
+#git{
+  filter: invert(1);
+  -ms-filter: invert(1);
+  -webkit-filter: invert(1);
+}
 @-webkit-keyframes left-in {
   from {
     left: -10%;
