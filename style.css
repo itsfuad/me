@@ -267,16 +267,7 @@ body .container .home .name {
   transition: 600ms;
   font-size: 4rem;
 }
-#logo path{
-  stroke-dasharray: 650px;
-  stroke-dashoffset: 650px;
-  animation: 8s animate forwards;
-}
-@keyframes animate {
-  to{
-    stroke-dashoffset: 0px;
-  }
-}
+
 body .container .home .bio {
   font-size: 1.5rem;
 }
@@ -325,16 +316,11 @@ body .container .skills{
   transition: 600ms;
 }
 .about img{
-  height: 70%;
-  width: 70%;
+  height: 100%;
+  width: 100%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-.skills img{
-  height: 10%;
-  width: 10%;
-  opacity: 0;
 }
 body .container .skills[data-scroll="in"]{
   opacity: 1;
