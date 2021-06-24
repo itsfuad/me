@@ -1,6 +1,12 @@
 var navbarshow, navbarhide, bgfade;
 const deg = 6;
-
+const logo = document.querySelectorAll("#logo path");
+function p(){
+    for(let i = 0; i < logo.length; i++){
+        console.log("...");
+        console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+    }
+}
 
 /*setInterval(() => {
 let day = new Date();
@@ -12,6 +18,10 @@ document.getElementById("hr").style.transform = `rotateZ(${(hh)+(mm/12)}deg`;
 document.getElementById("mn").style.transform = `rotateZ(${mm}deg`;
 document.getElementById("sc").style.transform = `rotateZ(${ss}deg`;
 })*/
+
+
+
+
 function load(){
   document.getElementById("load").classList.toggle("done");
 }

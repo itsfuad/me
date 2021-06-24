@@ -267,6 +267,16 @@ body .container .home .name {
   transition: 600ms;
   font-size: 4rem;
 }
+#logo path{
+  stroke-dasharray: 650px;
+  stroke-dashoffset: 650px;
+  animation: 8s animate forwards;
+}
+@keyframes animate {
+  to{
+    stroke-dashoffset: 0px;
+  }
+}
 body .container .home .bio {
   font-size: 1.5rem;
 }
