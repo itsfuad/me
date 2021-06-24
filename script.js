@@ -2,7 +2,7 @@ var navbarshow, navbarhide, bgfade;
 const deg = 6;
 
 
-setInterval(() => {
+/*setInterval(() => {
 let day = new Date();
 let hh = day.getHours() * 30;
 let mm = day.getMinutes() * deg;
@@ -11,13 +11,9 @@ let ss = day.getSeconds() * deg;
 document.getElementById("hr").style.transform = `rotateZ(${(hh)+(mm/12)}deg`;
 document.getElementById("mn").style.transform = `rotateZ(${mm}deg`;
 document.getElementById("sc").style.transform = `rotateZ(${ss}deg`;
-})
+})*/
 function load(){
   document.getElementById("load").classList.toggle("done");
-  load_home();
-}
-function load_home(){
-    animateleft(document.getElementById("home"));
 }
 
 var about_not_loaded = true;

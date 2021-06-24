@@ -12,11 +12,11 @@ html {
   font-size: 9px;
   font-family: Now, "Courier New", Courier, monospace;
   scroll-behavior: smooth;
+  background-color: rgb(27, 32, 41);
+  color: white;
 }
 
-body {
-  background: rgba(255, 255, 255, 0.8);
-}
+
 body strong{
   color: #519DF9;
   transition: 600ms;
@@ -49,7 +49,7 @@ body #load.done{
 	opacity:0;
 	z-index: -10;
 }
-
+/*
 body .background {
   position: fixed;
   top: 40%;
@@ -72,9 +72,9 @@ body .background .clock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("src/clock.png"), #ebebeb;
+  background: url("src/clock.png");
   background-size: cover;
-  border: 4px solid #000000;
+  border: 4px solid transparent;
   border-radius: 50%;
   -webkit-box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
@@ -145,6 +145,7 @@ body .background.fade {
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
+*/
 body .container{
   user-select:none;
   -moz-user-select:none;
@@ -250,20 +251,24 @@ body .container .title-3 {
   font-weight: bold;
 }
 body .container .home {
-  opacity: 0;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 4;
   margin: 2rem;
-  margin-top: 70vh;
+  margin-top: 50vh;
 }
 
 body .container .home .name {
   -webkit-transition: 600ms;
   transition: 600ms;
-  font-size: 2.4rem;
+  font-size: 4rem;
 }
 body .container .home .bio {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 body .container .home .explore {
   background-color: black;
@@ -295,8 +300,8 @@ body .container .about[data-scroll="in"]{
   opacity: 1;
 }
 body .container #about-detail{
-    background: rgba(0, 0, 0, 0.05);
-    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
     text-align: justify;
     border-radius: 10px;
 }
@@ -306,9 +311,21 @@ body .container .skills{
   margin: 2rem;
   z-index: 4;
   opacity: 0;
+
   transition: 600ms;
 }
-
+.about img{
+  height: 70%;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skills img{
+  height: 10%;
+  width: 10%;
+  opacity: 0;
+}
 body .container .skills[data-scroll="in"]{
   opacity: 1;
 }
@@ -317,12 +334,14 @@ body .container .skills .container{
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
+  
   gap:5px;
 }
 body .container .skills .container-2 > div{
   margin-bottom: 15px;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
   border-radius: 10px;
 }
 body .container .skills  div {
@@ -332,6 +351,7 @@ body .container .skills .language .skillbox {
   color: #000000;
   opacity: 1;
   margin: 5px;
+  color: white;
 }
 body .container .skills .language .skillbox .percentage {
   background-color: #DDDDDD;
@@ -513,7 +533,7 @@ body .container .contact_me {
   margin: 0;
   margin: 0.5rem;
   padding-top: 10vh;
-  color: black;
+  color: white;
   text-align: center;
   border-radius: 5px;
   background-color: transparent;
@@ -552,7 +572,7 @@ body .container .contact_me form input[type=submit] {
   border: 2px solid black;
   padding: 14px 40px;
   outline: none;
-  color: black;
+  color: white;
   border-radius: 24px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -734,7 +754,7 @@ body .container footer {
   body .background .clock {
     width: 30rem;
     height: 30rem;
-    border: 8px solid #000000;
+    border: 8px solid transparent;
   }
   body .background .clock .hour, body .background .clock .hr {
     width: 15rem;
@@ -809,9 +829,11 @@ body .container footer {
     width: 30%;
   }
 
-  .skills img{
-    height: 30%;
-    width: 30%;
+  body .container .home .name {
+    font-size: 6rem;
+  }
+  body .container .home .bio {
+    font-size: 1.5rem;
   }
   body .container .skills .container-2{
     text-align: justify;
